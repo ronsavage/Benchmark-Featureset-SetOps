@@ -1,0 +1,53 @@
+{
+   "abstract" : "Compare various array/set handling modules",
+   "author" : [
+      "Ron Savage <ron@savage.net.au>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Module::Build version 0.4, CPAN::Meta::Converter version 2.120630",
+   "license" : [
+      "artistic_1"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "Benchmark-Featureset-SetOps",
+   "prereqs" : {
+      "build" : {
+         "requires" : {
+            "Test::More" : "0.94",
+            "Test::Pod" : "1.44"
+         }
+      },
+      "configure" : {
+         "requires" : {
+            "Module::Build" : "0.38"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "App::moduleswhere" : "0.03",
+            "Config::Tiny" : "2.13",
+            "Module::Version" : "0.12"
+         }
+      }
+   },
+   "provides" : {
+      "Benchmark::Featureset::SetOps" : {
+         "file" : "lib/Benchmark/Featureset/SetOps.pm",
+         "version" : "1.00"
+      },
+      "Benchmark::Featureset::SetOps::Config" : {
+         "file" : "lib/Benchmark/Featureset/SetOps/Config.pm",
+         "version" : "1.03"
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "license" : [
+         "http://opensource.org/licenses/artistic-license.php"
+      ]
+   },
+   "version" : "1.00"
+}
