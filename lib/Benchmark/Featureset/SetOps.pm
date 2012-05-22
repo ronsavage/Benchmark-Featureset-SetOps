@@ -534,9 +534,28 @@ See scripts/setops.report.pl and its output html/setops.report.html.
 
 Hint: Redirect the output of that script to $doc_root/setops.report.html.
 
-=head1 References
+=head1 FAQ
 
-The modules compared in this package often have links to various documents, which I won't repeat here...
+=head2 Where is the HTML template for the report?
+
+Templates ship in htdocs/assets/templates/benchmark/featureset/setops/.
+
+See also htdocs/assets/css/benchmark/featureset/setops/.
+
+=head2 How did you choose the modules to review?
+
+I maintain (but did not write) L<Set::Array>. I have never really liked its interface, so when I started a
+home-grown script that Kim Ryan (author of L<Locale::SubCountry>) and I use to compare his module with my
+L<WWW::Scraper::Wikipedia::ISO3166>, I wondered if there was some module more to my liking. Hence the search
+for alternatives. Then I realized my work could benefit the Perl community if I formalized the results of this
+search.
+
+Also, I have 7 modules on CPAN which use L<Set::Array>, so I wanted a good idea of the array/set modules before
+I decided to switch.
+
+=head1 See Also
+
+The modules compared in this package often have links to various modules, which I won't repeat here...
 
 The other module in this series is L<Benchmark::Featureset::LocaleCountry>.
 
