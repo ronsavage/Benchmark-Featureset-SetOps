@@ -415,12 +415,7 @@ Benchmark::Featureset::SetOps - Compare various array/set handling modules
 
 	#!/usr/bin/env perl
 
-	use strict;
-	use warnings;
-
 	use Benchmark::Featureset::SetOps;
-
-	# ------------------------------
 
 	Benchmark::Featureset::SetOps -> new -> run;
 
@@ -430,11 +425,18 @@ Hint: Redirect the output of that script to your $doc_root/setops.report.html.
 
 A copy of the report ships in html/setops.report.html.
 
-L<View the report on my website|http://savage.net.au/Perl-modules/html/setops.report.html>.
+L<View this report on my website|http://savage.net.au/Perl-modules/html/setops.report.html>.
 
 =head1 Description
 
 L<Benchmark::Featureset::SetOps> compares various array/set handling modules.
+
+The list of modules processed is shipped in data/module.list.ini, and can easily be edited before re-running:
+
+	shell> scripts/copy.config.pl
+	shell> scripts/setops.report.pl
+
+The config stuff is explained below.
 
 =head1 Distributions
 
@@ -501,8 +503,8 @@ structure in which modules are stored.
 
 That's why L<File::HomeDir> and L<Path::Class> are pre-requisites for this module.
 
-All modules which ship with their own config file are advised to use the same mechanism
-for storing such files.
+Although this is a good mechanism for modules which ship with their own config files, be advised that some
+CPAN tester machines run tests as users who don't have home directories, resulting in test failures.
 
 =head1 Constructor and Initialization
 

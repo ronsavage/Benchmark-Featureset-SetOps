@@ -39,7 +39,6 @@
 <tr><td>Sub-class files for Object::Array and Set::Scalar have been scanned and included.
 <tr><td>Scanning the source means modules must be installed, but no attempt is made to load them at run-time.</td></tr>
 <tr><td>Source files are found by running 'mwhere' which is shipped with the marvellous App::moduleswhere.</td><tr>
-<tr><td>Also, some modules uses sub-classes, so these too are processed.</td></tr>
 <tr><td>Version numbers are found by running 'mversion' which is shipped with the marvellous Module::Version.</td><tr>
 </table>
 
