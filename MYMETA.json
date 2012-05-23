@@ -36,11 +36,11 @@
    "provides" : {
       "Benchmark::Featureset::SetOps" : {
          "file" : "lib/Benchmark/Featureset/SetOps.pm",
-         "version" : "1.00"
+         "version" : "1.01"
       },
       "Benchmark::Featureset::SetOps::Config" : {
          "file" : "lib/Benchmark/Featureset/SetOps/Config.pm",
-         "version" : "1.03"
+         "version" : "1.01"
       }
    },
    "release_status" : "stable",
@@ -49,5 +49,5 @@
          "http://opensource.org/licenses/artistic-license.php"
       ]
    },
-   "version" : "1.00"
+   "version" : "1.01"
 }
