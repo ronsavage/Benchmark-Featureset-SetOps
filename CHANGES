@@ -1,4 +1,9 @@
 Revision history for Perl extension Benchmark::Featureset::SetOps.
 
+1.01  Wed May 23 10:25:00 2012
+	- Implement overload_type = 3 instead of hard-coding the name Object::Array.
+	- Include links to MetaCPAN in the output report.
+	- Fix version # in Benchmark::Featureset::SetOps::Config.
+
 1.00  Tue May 22 11:53:00 2012
 	- Original version

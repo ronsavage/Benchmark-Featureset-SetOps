@@ -24,7 +24,7 @@
 
 <h3 class="global_toc_text">Modules included</h3>
 
-: include "basic.table.tx" { row => $module_data };
+: include "basic.table.tx" { row => $modules_included };
 
 <table align="center">
 <tr><td>[*] Multisets means new() takes a hash, so elements are (name, value) pairs.</td></tr>
@@ -74,7 +74,7 @@
 
 <h3 class="global_toc_text">Module excluded</h3>
 
-: include "basic.table.tx" { row => $excluded_data };
+: include "basic.table.tx" { row => $modules_excluded };
 
 <hr />
 
