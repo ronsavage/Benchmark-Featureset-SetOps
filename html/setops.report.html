@@ -51,6 +51,41 @@ Overloaded methods
 
 <hr />
 
+<h3 class="global_toc_text">Report generator</h3>
+
+<table align="center" cellspacing="0" cellpadding="0">
+<tr>
+<!-- Left -->
+<td>
+<div class="even_left">
+Module
+</div>
+</td>
+<!-- Right -->
+<td>
+<div class="even_right">
+Version
+</div>
+</td>
+</tr>
+<tr>
+<!-- Left -->
+<td>
+<div class="last_odd_left">
+<a href="https://metacpan.org/release/Benchmark-Featureset-SetOps">Benchmark::Featureset::SetOps</a>
+</div>
+</td>
+<!-- Right -->
+<td>
+<div class="last_odd_right">
+1.01
+</div>
+</td>
+</tr>
+</table>
+
+<hr />
+
 <h3 class="global_toc_text">Modules included</h3>
 
 <table align="center" border = "1" summary = "Names">
@@ -61,74 +96,74 @@ Overloaded methods
 <td>Notes</td>
 </tr>
 <tr>
-<td>1: Array::AsObject</td>
+<td>1: <a href="https://metacpan.org/release/Array-AsObject">Array::AsObject</a></td>
 <td>1.02
 </td>
 <td>41</td>
-<td></td>
+<td>Depends indirectly on Date::Manip</td>
 </tr>
 <tr>
-<td>2: Object::Array</td>
+<td>2: <a href="https://metacpan.org/release/Object-Array">Object::Array</a></td>
 <td>0.060
 </td>
-<td>43</td>
-<td></td>
+<td>18</td>
+<td>Doesn't really offer set operations</td>
 </tr>
 <tr>
-<td>3: Set::Array</td>
+<td>3: <a href="https://metacpan.org/release/Set-Array">Set::Array</a></td>
 <td>0.26
 </td>
 <td>47</td>
-<td></td>
+<td>Some methods, e.g. difference(), update the invocant unexpectedly</td>
 </tr>
 <tr>
-<td>4: Set::Bag</td>
+<td>4: <a href="https://metacpan.org/release/Set-Bag">Set::Bag</a></td>
 <td>1.009
 </td>
 <td>17</td>
-<td>Supports multisets [*]</td>
+<td>Supports multisets, so new() takes a hash, and elements are (name, value) pairs</td>
 </tr>
 <tr>
-<td>5: Set::Light</td>
+<td>5: <a href="https://metacpan.org/release/Set-Light">Set::Light</a></td>
 <td>0.04
 </td>
 <td>6</td>
-<td></td>
+<td>Claims to be very small and fast compared to Set::Object and Set::Scalar</td>
 </tr>
 <tr>
-<td>6: Set::Object</td>
+<td>6: <a href="https://metacpan.org/release/Set-Object">Set::Object</a></td>
 <td>1.28
 </td>
 <td>39</td>
-<td></td>
+<td>Requires a C compiler</td>
 </tr>
 <tr>
-<td>7: Set::Scalar</td>
+<td>7: <a href="https://metacpan.org/release/Set-Scalar">Set::Scalar</a></td>
 <td>1.25
 </td>
 <td>44</td>
-<td></td>
+<td>Long term unfixed bug in Set::Scalar::ValuedUniverse</td>
 </tr>
 <tr>
-<td>8: Set::SortedArray</td>
+<td>8: <a href="https://metacpan.org/release/Set-SortedArray">Set::SortedArray</a></td>
 <td>0.02
 </td>
 <td>21</td>
-<td></td>
+<td>Modification of the set (i.e. after creation) is not supported</td>
 </tr>
 <tr>
-<td>9: Set::Tiny</td>
+<td>9: <a href="https://metacpan.org/release/Set-Tiny">Set::Tiny</a></td>
 <td>0.01
 </td>
 <td>23</td>
-<td></td>
+<td>Recommended, taking in to account features (+), unfixed bugs (-),<br />minimal dependencies (+) and, lastly, speed (+). Stats below</td>
 </tr>
 <tr>
-<td>10: Set::Toolkit</td>
+<td>10: <a href="https://metacpan.org/release/Set-Toolkit">Set::Toolkit</a></td>
 <td>0.11
 </td>
 <td>16</td>
-<td></td>
+<td>Bug report of random test failures</td>
 </tr>
 <tr>
 <td>Name</td>
@@ -138,12 +173,6 @@ Overloaded methods
 </tr>
 </table>
 
-
-<table align="center">
-<tr><td>[*] Multisets means new() takes a hash, so elements are (name, value) pairs.</td></tr>
-</table>
-
-<br />
 
 <table align="center">
 <tr><td>Method names are found by scanning the source for /^sub.../.</td></tr>
@@ -252,59 +281,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>7: after</td>
-<td></td>
-<td>Yes</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>8: after_incl</td>
-<td></td>
-<td>Yes</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>9: all</td>
-<td></td>
-<td>Yes</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>10: any</td>
-<td></td>
-<td>Yes</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>11: append</td>
+<td>7: append</td>
 <td></td>
 <td></td>
 <td>Yes</td>
@@ -317,20 +294,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>12: apply</td>
-<td></td>
-<td>Yes</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>13: are_equal</td>
+<td>8: are_equal</td>
 <td></td>
 <td></td>
 <td></td>
@@ -343,7 +307,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>14: as_array</td>
+<td>9: as_array</td>
 <td></td>
 <td></td>
 <td></td>
@@ -356,7 +320,7 @@ Overloaded methods
 <td>Yes. @{}</td>
 </tr>
 <tr>
-<td>15: as_hash</td>
+<td>10: as_hash</td>
 <td>Yes</td>
 <td></td>
 <td>Yes</td>
@@ -369,7 +333,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>16: as_string</td>
+<td>11: as_string</td>
 <td></td>
 <td></td>
 <td></td>
@@ -382,7 +346,7 @@ Overloaded methods
 <td>Yes. &quot;&quot;</td>
 </tr>
 <tr>
-<td>17: as_string_callback</td>
+<td>12: as_string_callback</td>
 <td></td>
 <td></td>
 <td></td>
@@ -395,7 +359,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>18: asymmetric_difference</td>
+<td>13: asymmetric_difference</td>
 <td></td>
 <td></td>
 <td></td>
@@ -408,7 +372,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>19: at</td>
+<td>14: at</td>
 <td>Yes</td>
 <td></td>
 <td>Yes</td>
@@ -421,7 +385,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>20: bag</td>
+<td>15: bag</td>
 <td></td>
 <td></td>
 <td>Yes. &amp;</td>
@@ -434,33 +398,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>21: before</td>
-<td></td>
-<td>Yes</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>22: before_incl</td>
-<td></td>
-<td>Yes</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>23: binary_intersection</td>
+<td>16: binary_intersection</td>
 <td></td>
 <td></td>
 <td></td>
@@ -473,7 +411,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>24: cartesian_product</td>
+<td>17: cartesian_product</td>
 <td></td>
 <td></td>
 <td></td>
@@ -486,7 +424,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>25: cartesian_product_iterator</td>
+<td>18: cartesian_product_iterator</td>
 <td></td>
 <td></td>
 <td></td>
@@ -499,7 +437,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>26: clear</td>
+<td>19: clear</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -512,7 +450,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>27: clone</td>
+<td>20: clone</td>
 <td></td>
 <td></td>
 <td></td>
@@ -525,7 +463,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>28: cmp</td>
+<td>21: cmp</td>
 <td></td>
 <td></td>
 <td></td>
@@ -538,7 +476,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>29: compact</td>
+<td>22: compact</td>
 <td>Yes</td>
 <td></td>
 <td>Yes</td>
@@ -551,7 +489,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>30: compare</td>
+<td>23: compare</td>
 <td></td>
 <td></td>
 <td></td>
@@ -564,7 +502,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>31: complement</td>
+<td>24: complement</td>
 <td></td>
 <td></td>
 <td>Yes</td>
@@ -577,7 +515,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>32: contains</td>
+<td>25: contains</td>
 <td></td>
 <td>Yes</td>
 <td></td>
@@ -590,7 +528,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>33: copy</td>
+<td>26: copy</td>
 <td></td>
 <td></td>
 <td></td>
@@ -603,7 +541,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>34: count</td>
+<td>27: count</td>
 <td>Yes</td>
 <td></td>
 <td>Yes</td>
@@ -616,7 +554,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>35: cpop</td>
+<td>28: cpop</td>
 <td></td>
 <td></td>
 <td>Yes</td>
@@ -629,7 +567,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>36: cshift</td>
+<td>29: cshift</td>
 <td></td>
 <td></td>
 <td>Yes</td>
@@ -642,7 +580,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>37: delete</td>
+<td>30: delete</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -655,7 +593,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>38: delete_at</td>
+<td>31: delete_at</td>
 <td>Yes</td>
 <td></td>
 <td>Yes</td>
@@ -668,7 +606,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>39: difference</td>
+<td>32: difference</td>
 <td>Yes</td>
 <td></td>
 <td>Yes. -</td>
@@ -681,7 +619,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>40: duplicates</td>
+<td>33: duplicates</td>
 <td></td>
 <td></td>
 <td>Yes</td>
@@ -694,7 +632,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>41: each</td>
+<td>34: each</td>
 <td></td>
 <td></td>
 <td></td>
@@ -707,7 +645,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>42: elem</td>
+<td>35: elem</td>
 <td></td>
 <td>Yes</td>
 <td></td>
@@ -720,7 +658,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>43: element</td>
+<td>36: element</td>
 <td></td>
 <td></td>
 <td></td>
@@ -733,7 +671,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>44: elements</td>
+<td>37: elements</td>
 <td></td>
 <td></td>
 <td></td>
@@ -746,7 +684,7 @@ Overloaded methods
 <td>Yes</td>
 </tr>
 <tr>
-<td>45: elems</td>
+<td>38: elems</td>
 <td></td>
 <td>Yes</td>
 <td></td>
@@ -759,7 +697,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>46: empty_clone</td>
+<td>39: empty_clone</td>
 <td></td>
 <td></td>
 <td></td>
@@ -772,7 +710,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>47: eq</td>
+<td>40: eq</td>
 <td></td>
 <td></td>
 <td></td>
@@ -785,7 +723,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>48: equal</td>
+<td>41: equal</td>
 <td></td>
 <td></td>
 <td></td>
@@ -798,7 +736,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>49: err</td>
+<td>42: err</td>
 <td>Yes</td>
 <td></td>
 <td></td>
@@ -811,7 +749,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>50: errmsg</td>
+<td>43: errmsg</td>
 <td>Yes</td>
 <td></td>
 <td></td>
@@ -824,7 +762,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>51: exists</td>
+<td>44: exists</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -837,7 +775,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>52: extend</td>
+<td>45: extend</td>
 <td></td>
 <td></td>
 <td></td>
@@ -850,20 +788,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>53: false</td>
-<td></td>
-<td>Yes</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>54: fill</td>
+<td>46: fill</td>
 <td>Yes</td>
 <td></td>
 <td>Yes</td>
@@ -876,7 +801,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>55: find</td>
+<td>47: find</td>
 <td></td>
 <td></td>
 <td></td>
@@ -889,7 +814,7 @@ Overloaded methods
 <td>Yes</td>
 </tr>
 <tr>
-<td>56: first</td>
+<td>48: first</td>
 <td>Yes</td>
 <td></td>
 <td>Yes</td>
@@ -902,59 +827,7 @@ Overloaded methods
 <td>Yes</td>
 </tr>
 <tr>
-<td>57: first_index</td>
-<td></td>
-<td>Yes</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>58: first_value</td>
-<td></td>
-<td>Yes</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>59: firstidx</td>
-<td></td>
-<td>Yes</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>60: firstval</td>
-<td></td>
-<td>Yes</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>61: flatten</td>
+<td>49: flatten</td>
 <td></td>
 <td></td>
 <td>Yes</td>
@@ -967,7 +840,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>62: foreach</td>
+<td>50: foreach</td>
 <td></td>
 <td></td>
 <td>Yes</td>
@@ -980,7 +853,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>63: grab</td>
+<td>51: grab</td>
 <td></td>
 <td></td>
 <td></td>
@@ -993,7 +866,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>64: grep</td>
+<td>52: grep</td>
 <td></td>
 <td>Yes</td>
 <td></td>
@@ -1006,7 +879,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>65: has</td>
+<td>53: has</td>
 <td></td>
 <td></td>
 <td></td>
@@ -1019,7 +892,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>66: have_same_universe</td>
+<td>54: have_same_universe</td>
 <td></td>
 <td></td>
 <td></td>
@@ -1032,7 +905,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>67: impose</td>
+<td>55: impose</td>
 <td></td>
 <td></td>
 <td>Yes</td>
@@ -1045,7 +918,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>68: index</td>
+<td>56: index</td>
 <td>Yes</td>
 <td></td>
 <td>Yes</td>
@@ -1058,20 +931,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>69: indexes</td>
-<td></td>
-<td>Yes</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>70: indices</td>
+<td>57: indices</td>
 <td></td>
 <td></td>
 <td>Yes</td>
@@ -1084,7 +944,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>71: insert</td>
+<td>58: insert</td>
 <td></td>
 <td></td>
 <td></td>
@@ -1097,33 +957,7 @@ Overloaded methods
 <td>Yes</td>
 </tr>
 <tr>
-<td>72: insert_after</td>
-<td></td>
-<td>Yes</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>73: insert_after_string</td>
-<td></td>
-<td>Yes</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>74: intersection</td>
+<td>59: intersection</td>
 <td>Yes</td>
 <td></td>
 <td>Yes. *</td>
@@ -1136,7 +970,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>75: invert</td>
+<td>60: invert</td>
 <td></td>
 <td></td>
 <td></td>
@@ -1149,7 +983,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>76: is_disjoint</td>
+<td>61: is_disjoint</td>
 <td></td>
 <td></td>
 <td></td>
@@ -1162,7 +996,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>77: is_empty</td>
+<td>62: is_empty</td>
 <td>Yes</td>
 <td></td>
 <td>Yes</td>
@@ -1175,7 +1009,7 @@ Overloaded methods
 <td>Yes</td>
 </tr>
 <tr>
-<td>78: is_equal</td>
+<td>63: is_equal</td>
 <td>Yes</td>
 <td></td>
 <td>Yes. ==</td>
@@ -1188,7 +1022,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>79: is_key</td>
+<td>64: is_key</td>
 <td></td>
 <td></td>
 <td></td>
@@ -1201,7 +1035,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>80: is_null</td>
+<td>65: is_null</td>
 <td></td>
 <td></td>
 <td></td>
@@ -1214,7 +1048,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>81: is_ordered</td>
+<td>66: is_ordered</td>
 <td></td>
 <td></td>
 <td></td>
@@ -1227,7 +1061,7 @@ Overloaded methods
 <td>Yes</td>
 </tr>
 <tr>
-<td>82: is_proper_subset</td>
+<td>67: is_proper_subset</td>
 <td></td>
 <td></td>
 <td></td>
@@ -1240,7 +1074,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>83: is_proper_superset</td>
+<td>68: is_proper_superset</td>
 <td></td>
 <td></td>
 <td></td>
@@ -1253,7 +1087,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>84: is_properly_intersecting</td>
+<td>69: is_properly_intersecting</td>
 <td></td>
 <td></td>
 <td></td>
@@ -1266,7 +1100,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>85: is_subset</td>
+<td>70: is_subset</td>
 <td>Yes</td>
 <td></td>
 <td></td>
@@ -1279,7 +1113,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>86: is_superset</td>
+<td>71: is_superset</td>
 <td></td>
 <td></td>
 <td></td>
@@ -1292,7 +1126,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>87: is_unique</td>
+<td>72: is_unique</td>
 <td></td>
 <td></td>
 <td></td>
@@ -1305,7 +1139,7 @@ Overloaded methods
 <td>Yes</td>
 </tr>
 <tr>
-<td>88: is_universal</td>
+<td>73: is_universal</td>
 <td></td>
 <td></td>
 <td></td>
@@ -1318,7 +1152,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>89: isa</td>
+<td>74: isa</td>
 <td></td>
 <td>Yes</td>
 <td></td>
@@ -1331,7 +1165,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>90: ish_int</td>
+<td>75: ish_int</td>
 <td></td>
 <td></td>
 <td></td>
@@ -1344,7 +1178,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>91: join</td>
+<td>76: join</td>
 <td></td>
 <td>Yes</td>
 <td>Yes</td>
@@ -1357,7 +1191,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>92: last</td>
+<td>77: last</td>
 <td>Yes</td>
 <td></td>
 <td>Yes</td>
@@ -1370,59 +1204,7 @@ Overloaded methods
 <td>Yes</td>
 </tr>
 <tr>
-<td>93: last_index</td>
-<td></td>
-<td>Yes</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>94: last_value</td>
-<td></td>
-<td>Yes</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>95: lastidx</td>
-<td></td>
-<td>Yes</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>96: lastval</td>
-<td></td>
-<td>Yes</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>97: length</td>
+<td>78: length</td>
 <td>Yes</td>
 <td></td>
 <td>Yes</td>
@@ -1435,7 +1217,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>98: list</td>
+<td>79: list</td>
 <td>Yes</td>
 <td></td>
 <td></td>
@@ -1448,7 +1230,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>99: map</td>
+<td>80: map</td>
 <td></td>
 <td>Yes</td>
 <td></td>
@@ -1461,7 +1243,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>100: max</td>
+<td>81: max</td>
 <td>Yes</td>
 <td></td>
 <td>Yes</td>
@@ -1474,7 +1256,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>101: maximize</td>
+<td>82: maximize</td>
 <td></td>
 <td></td>
 <td></td>
@@ -1487,7 +1269,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>102: member</td>
+<td>83: member</td>
 <td></td>
 <td></td>
 <td></td>
@@ -1500,7 +1282,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>103: members</td>
+<td>84: members</td>
 <td></td>
 <td></td>
 <td></td>
@@ -1513,7 +1295,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>104: merge</td>
+<td>85: merge</td>
 <td></td>
 <td></td>
 <td></td>
@@ -1526,7 +1308,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>105: min</td>
+<td>86: min</td>
 <td>Yes</td>
 <td></td>
 <td></td>
@@ -1539,7 +1321,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>106: minimize</td>
+<td>87: minimize</td>
 <td></td>
 <td></td>
 <td></td>
@@ -1552,33 +1334,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>107: minmax</td>
-<td></td>
-<td>Yes</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>108: natatime</td>
-<td></td>
-<td>Yes</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>109: ne</td>
+<td>88: ne</td>
 <td></td>
 <td></td>
 <td></td>
@@ -1591,7 +1347,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>110: new</td>
+<td>89: new</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -1604,7 +1360,7 @@ Overloaded methods
 <td>Yes</td>
 </tr>
 <tr>
-<td>111: new_presorted</td>
+<td>90: new_presorted</td>
 <td></td>
 <td></td>
 <td></td>
@@ -1617,20 +1373,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>112: none</td>
-<td></td>
-<td>Yes</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>113: not_equal</td>
+<td>91: not_equal</td>
 <td>Yes</td>
 <td></td>
 <td>Yes. !=</td>
@@ -1643,7 +1386,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>114: not_subset</td>
+<td>92: not_subset</td>
 <td>Yes</td>
 <td></td>
 <td></td>
@@ -1656,20 +1399,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>115: notall</td>
-<td></td>
-<td>Yes</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>116: null</td>
+<td>93: null</td>
 <td></td>
 <td></td>
 <td></td>
@@ -1682,7 +1412,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>117: op_intersection</td>
+<td>94: op_intersection</td>
 <td></td>
 <td></td>
 <td></td>
@@ -1695,7 +1425,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>118: op_invert</td>
+<td>95: op_invert</td>
 <td></td>
 <td></td>
 <td></td>
@@ -1708,7 +1438,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>119: op_symm_diff</td>
+<td>96: op_symm_diff</td>
 <td></td>
 <td></td>
 <td></td>
@@ -1721,7 +1451,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>120: op_union</td>
+<td>97: op_union</td>
 <td></td>
 <td></td>
 <td></td>
@@ -1734,7 +1464,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>121: ordered_elements</td>
+<td>98: ordered_elements</td>
 <td></td>
 <td></td>
 <td></td>
@@ -1747,7 +1477,7 @@ Overloaded methods
 <td>Yes</td>
 </tr>
 <tr>
-<td>122: over_delete</td>
+<td>99: over_delete</td>
 <td></td>
 <td></td>
 <td></td>
@@ -1760,7 +1490,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>123: pack</td>
+<td>100: pack</td>
 <td></td>
 <td></td>
 <td>Yes</td>
@@ -1773,7 +1503,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>124: pop</td>
+<td>101: pop</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes. &gt;&gt;=</td>
@@ -1786,7 +1516,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>125: power_set</td>
+<td>102: power_set</td>
 <td></td>
 <td></td>
 <td></td>
@@ -1799,7 +1529,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>126: power_set_iterator</td>
+<td>103: power_set_iterator</td>
 <td></td>
 <td></td>
 <td></td>
@@ -1812,7 +1542,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>127: print</td>
+<td>104: print</td>
 <td></td>
 <td></td>
 <td>Yes</td>
@@ -1825,7 +1555,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>128: proper_subset</td>
+<td>105: proper_subset</td>
 <td></td>
 <td></td>
 <td></td>
@@ -1838,7 +1568,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>129: proper_superset</td>
+<td>106: proper_superset</td>
 <td></td>
 <td></td>
 <td></td>
@@ -1851,7 +1581,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>130: push</td>
+<td>107: push</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes. &lt;&lt;</td>
@@ -1864,7 +1594,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>131: randomize</td>
+<td>108: randomize</td>
 <td>Yes</td>
 <td></td>
 <td>Yes</td>
@@ -1877,7 +1607,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>132: remove</td>
+<td>109: remove</td>
 <td></td>
 <td></td>
 <td></td>
@@ -1890,7 +1620,7 @@ Overloaded methods
 <td>Yes</td>
 </tr>
 <tr>
-<td>133: reverse</td>
+<td>110: reverse</td>
 <td>Yes</td>
 <td></td>
 <td>Yes</td>
@@ -1903,7 +1633,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>134: rindex</td>
+<td>111: rindex</td>
 <td>Yes</td>
 <td></td>
 <td>Yes</td>
@@ -1916,7 +1646,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>135: rotate</td>
+<td>112: rotate</td>
 <td>Yes</td>
 <td></td>
 <td>Yes</td>
@@ -1929,7 +1659,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>136: search</td>
+<td>113: search</td>
 <td></td>
 <td></td>
 <td></td>
@@ -1942,7 +1672,7 @@ Overloaded methods
 <td>Yes</td>
 </tr>
 <tr>
-<td>137: set</td>
+<td>114: set</td>
 <td>Yes</td>
 <td></td>
 <td>Yes</td>
@@ -1955,7 +1685,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>138: shift</td>
+<td>115: shift</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes. &gt;&gt;</td>
@@ -1968,7 +1698,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>139: size</td>
+<td>116: size</td>
 <td></td>
 <td>Yes</td>
 <td></td>
@@ -1981,7 +1711,7 @@ Overloaded methods
 <td>Yes</td>
 </tr>
 <tr>
-<td>140: slice</td>
+<td>117: slice</td>
 <td></td>
 <td>Yes</td>
 <td></td>
@@ -1994,7 +1724,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>141: sort</td>
+<td>118: sort</td>
 <td>Yes</td>
 <td></td>
 <td>Yes</td>
@@ -2007,7 +1737,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>142: splice</td>
+<td>119: splice</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -2020,7 +1750,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>143: strengthen</td>
+<td>120: strengthen</td>
 <td></td>
 <td></td>
 <td></td>
@@ -2033,7 +1763,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>144: strong_pkg</td>
+<td>121: strong_pkg</td>
 <td></td>
 <td></td>
 <td></td>
@@ -2046,7 +1776,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>145: subset</td>
+<td>122: subset</td>
 <td></td>
 <td></td>
 <td></td>
@@ -2059,7 +1789,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>146: sum</td>
+<td>123: sum</td>
 <td></td>
 <td></td>
 <td></td>
@@ -2072,7 +1802,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>147: superset</td>
+<td>124: superset</td>
 <td></td>
 <td></td>
 <td></td>
@@ -2085,7 +1815,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>148: symmetric_difference</td>
+<td>125: symmetric_difference</td>
 <td>Yes</td>
 <td></td>
 <td>Yes. %</td>
@@ -2098,7 +1828,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>149: tie_array_pkg</td>
+<td>126: tie_array_pkg</td>
 <td></td>
 <td></td>
 <td></td>
@@ -2111,7 +1841,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>150: tie_hash_pkg</td>
+<td>127: tie_hash_pkg</td>
 <td></td>
 <td></td>
 <td></td>
@@ -2124,20 +1854,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>151: true</td>
-<td></td>
-<td>Yes</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>152: union</td>
+<td>128: union</td>
 <td>Yes</td>
 <td></td>
 <td>Yes. +</td>
@@ -2150,20 +1867,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>153: uniq</td>
-<td></td>
-<td>Yes</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>154: unique</td>
+<td>129: unique</td>
 <td>Yes</td>
 <td></td>
 <td>Yes</td>
@@ -2176,7 +1880,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>155: universe</td>
+<td>130: universe</td>
 <td></td>
 <td></td>
 <td></td>
@@ -2189,7 +1893,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>156: unordered_elements</td>
+<td>131: unordered_elements</td>
 <td></td>
 <td></td>
 <td></td>
@@ -2202,7 +1906,7 @@ Overloaded methods
 <td>Yes</td>
 </tr>
 <tr>
-<td>157: unshift</td>
+<td>132: unshift</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes. &lt;&lt;=</td>
@@ -2215,7 +1919,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>158: version</td>
+<td>133: version</td>
 <td>Yes</td>
 <td></td>
 <td></td>
@@ -2228,7 +1932,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>159: weak_pkg</td>
+<td>134: weak_pkg</td>
 <td></td>
 <td></td>
 <td></td>
@@ -2241,7 +1945,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>160: weak_set</td>
+<td>135: weak_set</td>
 <td></td>
 <td></td>
 <td></td>
@@ -2254,7 +1958,7 @@ Overloaded methods
 <td></td>
 </tr>
 <tr>
-<td>161: weaken</td>
+<td>136: weaken</td>
 <td></td>
 <td></td>
 <td></td>
@@ -2291,8 +1995,10 @@ Overloaded methods
 
 <table align="center">
 <tr><td>Just because 2 modules have a method with the same name does not mean the subs' behaviour is identical.</td></tr>
-<tr><td>Obviously names like symmetric_difference() are presumably the same, but there is a catch:</td></tr>
-<tr><td>One module may expect you to call methods as functions, while the other uses methods (with $obj -> X() ).</td></tr>
+<tr><td>For instance, symmetric_difference() in Set::Tiny and Set::Scalar return different lists.</td></tr>
+<tr><td>Not only that, but Set::Tiny's method returns a set, whereas Set::Scalar's returns a string.</td></tr>
+<tr><td>Further, some methods in Set::Array change the invocant object, which is an apalling design feature.</td></tr>
+<tr><td>Sample code ships as scripts/symmetric.demo.pl.</td></tr>
 <tr><td>As always, RTFM!</td></tr>
 </table>
 
@@ -2306,6 +2012,105 @@ Overloaded methods
 
 <hr />
 
+<h3 class="global_toc_text">Statistics</h3>
+
+<table align="center">
+<tr><td>These statistics were generated with benchmark.pl, which ships with Set::Tiny.</td></tr>
+<tr><td>The author of Set::Tiny says: This is a non-representative benchmark of different Set:: modules.</td></tr>
+<tr><td>I ran it on my laptop, meaning ignore the absolute values and just use the comparative values.</td></tr>
+<tr><td>The following stats also ship as data/benchmark.log.</td></tr>
+</table>
+
+<pre>
+running benchmarks with sets of size 100 and 100
+
+delete:
+               Rate Set::Scalar Set::Object   Set::Tiny
+Set::Scalar  3349/s          --        -93%        -94%
+Set::Object 45997/s       1274%          --        -17%
+Set::Tiny   55350/s       1553%         20%          --
+
+difference:
+               Rate Set::Scalar Set::Object   Set::Tiny
+Set::Scalar  1745/s          --        -90%        -95%
+Set::Object 17066/s        878%          --        -50%
+Set::Tiny   33811/s       1837%         98%          --
+
+insert:
+               Rate Set::Scalar Set::Object   Set::Tiny
+Set::Scalar  3759/s          --        -94%        -95%
+Set::Object 62877/s       1573%          --        -10%
+Set::Tiny   69818/s       1757%         11%          --
+
+intersection:
+               Rate Set::Scalar Set::Object   Set::Tiny
+Set::Scalar  1659/s          --        -86%        -88%
+Set::Object 12217/s        636%          --        -11%
+Set::Tiny   13653/s        723%         12%          --
+
+invert:
+               Rate Set::Scalar Set::Object   Set::Tiny
+Set::Scalar  2488/s          --        -80%        -91%
+Set::Object 12560/s        405%          --        -54%
+Set::Tiny   27307/s        998%        117%          --
+
+is_disjoint:
+               Rate Set::Scalar Set::Object   Set::Tiny
+Set::Scalar   786/s          --        -93%        -94%
+Set::Object 11821/s       1404%          --        -12%
+Set::Tiny   13398/s       1605%         13%          --
+
+is_equal:
+                Rate Set::Scalar Set::Object   Set::Tiny
+Set::Scalar   1571/s          --        -98%        -99%
+Set::Object  77422/s       4828%          --        -37%
+Set::Tiny   123675/s       7772%         60%          --
+
+is_proper_subset:
+                 Rate Set::Scalar Set::Object   Set::Tiny
+Set::Scalar    1584/s          --       -100%       -100%
+Set::Object 1097492/s      69188%          --        -11%
+Set::Tiny   1238753/s      78106%         13%          --
+
+is_proper_superset:
+                 Rate Set::Scalar Set::Object   Set::Tiny
+Set::Scalar    1614/s          --       -100%       -100%
+Set::Object  778425/s      48117%          --        -37%
+Set::Tiny   1226609/s      75878%         58%          --
+
+is_subset:
+                Rate Set::Scalar Set::Object   Set::Tiny
+Set::Scalar   1544/s          --        -98%        -99%
+Set::Object  84620/s       5381%          --        -34%
+Set::Tiny   129153/s       8265%         53%          --
+
+is_superset:
+                Rate Set::Scalar Set::Object   Set::Tiny
+Set::Scalar   1570/s          --        -98%        -99%
+Set::Object  76119/s       4748%          --        -38%
+Set::Tiny   122530/s       7704%         61%          --
+
+new:
+               Rate Set::Scalar Set::Object   Set::Tiny
+Set::Scalar  3491/s          --        -94%        -95%
+Set::Object 62877/s       1701%          --        -11%
+Set::Tiny   70969/s       1933%         13%          --
+
+symmetric_difference:
+               Rate Set::Scalar Set::Object   Set::Tiny
+Set::Scalar  2765/s          --        -57%        -87%
+Set::Object  6399/s        131%          --        -69%
+Set::Tiny   20958/s        658%        228%          --
+
+union:
+               Rate Set::Scalar Set::Object   Set::Tiny
+Set::Scalar  1558/s          --        -91%        -94%
+Set::Object 17454/s       1020%          --        -37%
+Set::Tiny   27568/s       1669%         58%          --
+</pre>
+
+<hr />
+
 <h3 class="global_toc_text">Module excluded</h3>
 
 <table align="center" border = "1" summary = "Names">
@@ -2314,43 +2119,43 @@ Overloaded methods
 <td>Notes</td>
 </tr>
 <tr>
-<td>1: Array::Compare</td>
+<td>1: <a href="https://metacpan.org/release/Array-Compare">Array::Compare</a></td>
 <td>Array::Compare has very limited (focused) functionality</td>
 </tr>
 <tr>
-<td>2: Array::Uniq</td>
+<td>2: <a href="https://metacpan.org/release/Array-Uniq">Array::Uniq</a></td>
 <td>Array::Uniq likewise</td>
 </tr>
 <tr>
-<td>3: Array::Utils</td>
+<td>3: <a href="https://metacpan.org/release/Array-Utils">Array::Utils</a></td>
 <td>Array::Utils likewise</td>
 </tr>
 <tr>
-<td>4: Bit::Vector</td>
+<td>4: <a href="https://metacpan.org/release/Bit-Vector">Bit::Vector</a></td>
 <td>Bit::Vector is sophisticated, but is more like an underlying support mechanism for sets<br/>and hence leaves a lot up to the end-user</td>
 </tr>
 <tr>
-<td>5: EO::Array</td>
+<td>5: <a href="https://metacpan.org/release/EO-Array">EO::Array</a></td>
 <td>EO::Array is an OO wrapper around Perl's array type</td>
 </tr>
 <tr>
-<td>6: Set::DynamicGroups</td>
+<td>6: <a href="https://metacpan.org/release/Set-DynamicGroups">Set::DynamicGroups</a></td>
 <td>Set::DynamicGroups handles multisets, as does Set::Bag.<br />It's designed to allow groups to be defined dynamically by rules based on other groups.<br />It has partial support for nested groups</td>
 </tr>
 <tr>
-<td>7: Set::Groups</td>
+<td>7: <a href="https://metacpan.org/release/Set-Groups">Set::Groups</a></td>
 <td>Set::Groups supports nested groups, and hence a completely different set of methods</td>
 </tr>
 <tr>
-<td>8: Set::Hash</td>
+<td>8: <a href="https://metacpan.org/release/Set-Hash">Set::Hash</a></td>
 <td>Set::Hash allows you to create strings as objects and use OO-style methods on them.<br />It's a sub-class of Set::Array</td>
 </tr>
 <tr>
-<td>9: Set::NestedGroups</td>
+<td>9: <a href="https://metacpan.org/release/Set-NestedGroups">Set::NestedGroups</a></td>
 <td>Set::NestedGroups is like Set::Groups</td>
 </tr>
 <tr>
-<td>10: Set::Relation</td>
+<td>10: <a href="https://metacpan.org/release/Set-Relation">Set::Relation</a></td>
 <td>Set::Relation is an emulator for RDBMS-style relational data</td>
 </tr>
 <tr>
@@ -2389,7 +2194,7 @@ Date
 <!-- Right -->
 <td>
 <div class="odd_right">
-2012-05-22
+2012-05-24
 </div>
 </td>
 </tr>
