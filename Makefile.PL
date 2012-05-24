@@ -27,8 +27,20 @@ WriteMakefile
 	PREREQ_PM =>
 	{
 	App::moduleswhere => 0.03,
+	Config            => undef,
 	Config::Tiny      => 2.13,
+	Date::Simple      => 3.03,
+	File::Copy        => 2.21,
+	File::HomeDir     => 0.99,
+	Hash::FieldHash   => 0.12,
 	Module::Version   => 0.12,
+	Path::Class       => 0.24,
+	Perl6::Slurp      => 0.050000,
+	strict            => 1.04,
+	Test::More        => 0.94,
+	Test::Pod         => 1.44,
+	Text::Xslate      => 1.5010,
+	warnings          => 1.12,
 	},
 	VERSION_FROM => 'lib/Benchmark/Featureset/SetOps.pm',
 );

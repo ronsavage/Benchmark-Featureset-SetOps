@@ -28,8 +28,18 @@
       "runtime" : {
          "requires" : {
             "App::moduleswhere" : "0.03",
+            "Config" : "0",
             "Config::Tiny" : "2.13",
-            "Module::Version" : "0.12"
+            "Date::Simple" : "3.03",
+            "File::Copy" : "2.21",
+            "File::HomeDir" : "0.99",
+            "Hash::FieldHash" : "0.12",
+            "Module::Version" : "0.12",
+            "Path::Class" : "0.24",
+            "Perl6::Slurp" : "0.05",
+            "Text::Xslate" : "1.501",
+            "strict" : "1.04",
+            "warnings" : "1.12"
          }
       }
    },

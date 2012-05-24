@@ -1,5 +1,11 @@
 Revision history for Perl extension Benchmark::Featureset::SetOps.
 
+1.02  Thu May 24 13:18:00 2012
+	- Update pre-reqs in Build.PL and Makefile.PL.
+		Various Set::* modules are not included. To run scripts/symmetric.demo.pl, install
+		Set::Array, Set::Scalar and Set::Tiny manually.
+	- Simplify scripts/symmetric.demo.pl, so it has less pre-reqs.
+
 1.01  Wed May 23 10:25:00 2012
 	- Implement overload_type = 3 instead of hard-coding the name Object::Array.
 	- Include links to MetaCPAN in the output report.
