@@ -3,6 +3,7 @@ Changelog.ini
 CHANGES
 config/.htbenchmark.featureset.setops.conf
 config/module.list.ini
+data/benchmark.log
 htdocs/assets/css/benchmark/featureset/setops/default.css
 htdocs/assets/css/benchmark/featureset/setops/fancy.table.css
 htdocs/assets/css/benchmark/featureset/setops/web.page.css
@@ -20,6 +21,7 @@ META.yml
 README
 scripts/copy.config.pl
 scripts/setops.report.pl
+scripts/symmetric.demo.pl
 share/.htbenchmark.featureset.localecountry.conf
 t/pod.t
 t/test.t
