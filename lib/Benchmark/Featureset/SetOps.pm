@@ -32,11 +32,10 @@ sub _build_environment
 	# mark_raw() is needed because of the HTML tag <a>.
 
 	push @environment,
-	{left => __PACKAGE__, right => $VERSION},
-	{left => 'Author',    right => mark_raw(qq|<a href="http://savage.net.au/">Ron Savage</a>|)},
-	{left => 'Date',      right => Date::Simple -> today},
-	{left => 'OS',        right => 'Debian V 6.0.4'},
-	{left => 'Perl',      right => $Config{version} };
+	{left => 'Author', right => mark_raw(qq|<a href="http://savage.net.au/">Ron Savage</a>|)},
+	{left => 'Date',   right => Date::Simple -> today},
+	{left => 'OS',     right => 'Debian V 6.0.4'},
+	{left => 'Perl',   right => $Config{version} };
 
 	return \@environment;
 }
@@ -155,7 +154,7 @@ sub _build_module_list
 			{td => mark_raw(qq|$count: <a href="https://metacpan.org/release/$href">$module</a>|)},
 			{td => $version},
 			{td => scalar keys %{$method_list{$module} } },
-			{td => $$module_config{$module}{notes} || ''},
+			{td => mark_raw($$module_config{$module}{notes})},
 		];
 	}
 
@@ -180,6 +179,25 @@ sub _build_purpose
 	return \@purpose;
 
 } # End of _build_purpose;
+
+# ------------------------------------------------
+
+sub _build_report_generator
+{
+	my($self)   = @_;
+	my($module) = __PACKAGE__;
+	my($href)   = $module;
+	$href       =~ s/::/-/g;
+
+	my(@report);
+
+	push @report,
+	{left => 'Module',                                                               right => 'Version'},
+	{left => mark_raw(qq|<a href="https://metacpan.org/release/$href">$module</a>|), right => $VERSION};
+
+	return \@report;
+
+} # End of _build_report_generator;
 
 # ------------------------------------------------
 
@@ -344,6 +362,7 @@ sub run
 			modules_excluded => $self -> _build_excluded_list($module_config),
 			modules_included => $module_list[0],
 			purpose          => $self -> _build_purpose,
+			report_generator => $self -> _build_report_generator,
 		 }
 		);
 

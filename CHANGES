@@ -4,6 +4,13 @@ Revision history for Perl extension Benchmark::Featureset::SetOps.
 	- Implement overload_type = 3 instead of hard-coding the name Object::Array.
 	- Include links to MetaCPAN in the output report.
 	- Fix version # in Benchmark::Featureset::SetOps::Config.
+	- Add a recommendation, as a note to Set::Object, and various other notes.
+	- Change design of HTML template slightly.
+	- Include statistics from Set::Tiny's benchmark.pl.
+	- Update various notes per module.
+	- Identify the report generator (this module) in the report body.
+	- Ship scripts/symmetric.demo.pl.
+	- Ship data/benchmark.log.
 
 1.00  Tue May 22 11:53:00 2012
 	- Original version
