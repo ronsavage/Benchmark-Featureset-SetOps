@@ -37,3 +37,6 @@ Output:
 Set::Array.symmetric_difference:  a b f g h i
 Set::Scalar.symmetric_difference: (a b e h i)
 Set::Tiny.symmetric_difference:   a b f g h i
+Now test if Set::Array updates the invocant:
+Before: a b c d e
+After:  a b
