@@ -17,10 +17,10 @@ name: Benchmark-Featureset-SetOps
 provides:
   Benchmark::Featureset::SetOps:
     file: lib/Benchmark/Featureset/SetOps.pm
-    version: 1.01
+    version: 1.02
   Benchmark::Featureset::SetOps::Config:
     file: lib/Benchmark/Featureset/SetOps/Config.pm
-    version: 1.01
+    version: 1.02
 requires:
   App::moduleswhere: 0.03
   Config: 0
@@ -37,4 +37,4 @@ requires:
   warnings: 1.12
 resources:
   license: http://opensource.org/licenses/artistic-license.php
-version: 1.01
+version: 1.02
