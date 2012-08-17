@@ -173,7 +173,7 @@ Set::Tiny   27568/s       1669%         58%          --
 
 <hr />
 
-<h3 class="global_toc_text">Module excluded</h3>
+<h3 class="global_toc_text">Modules excluded</h3>
 
 : include "basic.table.tx" { row => $modules_excluded };
 
