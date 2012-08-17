@@ -22,6 +22,5 @@ README
 scripts/copy.config.pl
 scripts/setops.report.pl
 scripts/symmetric.demo.pl
-share/.htbenchmark.featureset.localecountry.conf
 t/pod.t
 t/test.t
