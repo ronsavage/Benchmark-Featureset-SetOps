@@ -136,13 +136,13 @@ L<https://rt.cpan.org/Public/Dist/Display.html?Name=Benchmark::Featureset::SetOp
 
 =head1 Author
 
-L<Benchmark::Featureset::SetOps> was written by Ron Savage I<E<lt>ron@savage.net.auE<gt>> in 2011.
+L<Benchmark::Featureset::SetOps> was written by Ron Savage I<E<lt>ron@savage.net.auE<gt>> in 2012.
 
 Home page: L<http://savage.net.au/index.html>.
 
 =head1 Copyright
 
-Australian copyright (c) 2011, Ron Savage.
+Australian copyright (c) 2012, Ron Savage.
 
 	All Programs of mine are 'OSI Certified Open Source Software';
 	you can redistribute them and/or modify them under the terms of
