@@ -1,5 +1,9 @@
 Revision history for Perl extension Benchmark::Featureset::SetOps.
 
+1.03  Fri Aug 17 13:38:00 2012
+	- Removed unused dir share/.
+	- Unreleased.
+
 1.02  Thu May 24 13:18:00 2012
 	- Update pre-reqs in Build.PL and Makefile.PL.
 		Various Set::* modules are not included. To run scripts/symmetric.demo.pl, install
