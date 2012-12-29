@@ -13,7 +13,7 @@ EOF
 $class -> new
 (
 	module_name    => 'Benchmark::Featureset::SetOps',
-	license        => 'artistic',
+	license        => 'perl_5',
 	dist_abstract  => 'Compare various array/set handling modules',
 	dist_author    => 'Ron Savage <ron@savage.net.au>',
 	build_requires =>
