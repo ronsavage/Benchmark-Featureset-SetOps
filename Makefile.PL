@@ -38,7 +38,7 @@ WriteMakefile
 	Path::Class       => 0.24,
 	Perl6::Slurp      => 0.050000,
 	strict            => 1.04,
-	Test::Simple      => 0.94,
+	Test::More      => 0.94,
 	Test::Pod         => 1.45,
 	Text::Xslate      => 1.5010,
 	warnings          => 1.12,
