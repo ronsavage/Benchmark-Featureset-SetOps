@@ -39,7 +39,7 @@ WriteMakefile
 	Perl6::Slurp      => 0.050000,
 	strict            => 1.04,
 	Test::More      => 0.94,
-	Test::Pod         => 1.45,
+#	Test::Pod         => 1.45, # Make it optional. See t/pod.t
 	Text::Xslate      => 1.5010,
 	warnings          => 1.12,
 	},
