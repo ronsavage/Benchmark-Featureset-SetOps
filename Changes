@@ -1,6 +1,7 @@
 Revision history for Perl extension Benchmark::Featureset::SetOps.
 
-1.03  Unreleased
+1.03  Wed Feb 18 16:32:00 2015
+	- Rename CHANGES to Changes.
 	- Removed unused dir share/.
 	- Fix some dates in the docs (2011 -> 2012).
 

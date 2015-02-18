@@ -1,6 +1,6 @@
 Build.PL
 Changelog.ini
-CHANGES
+Changes
 config/.htbenchmark.featureset.setops.conf
 config/module.list.ini
 data/benchmark.log

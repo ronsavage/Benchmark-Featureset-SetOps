@@ -19,7 +19,7 @@ use Text::Xslate 'mark_raw';
 fieldhash my %html_config   => 'html_config';
 fieldhash my %module_config => 'module_config';
 
-our $VERSION = '1.02';
+our $VERSION = '1.03';
 
 # ------------------------------------------------
 
