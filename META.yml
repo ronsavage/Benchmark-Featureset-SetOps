@@ -3,38 +3,37 @@ abstract: 'Compare various array/set handling modules'
 author:
   - 'Ron Savage <ron@savage.net.au>'
 build_requires:
-  Test::More: 0.94
-  Test::Pod: 1.44
+  Test::More: '0.94'
 configure_requires:
-  Module::Build: 0.38
+  Module::Build: '0.38'
 dynamic_config: 1
-generated_by: 'Module::Build version 0.4003, CPAN::Meta::Converter version 2.120630'
-license: artistic
+generated_by: 'Module::Build version 0.4211, CPAN::Meta::Converter version 2.142060'
+license: artistic_2
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
-  version: 1.4
+  version: '1.4'
 name: Benchmark-Featureset-SetOps
 provides:
   Benchmark::Featureset::SetOps:
     file: lib/Benchmark/Featureset/SetOps.pm
-    version: 1.02
+    version: '1.03'
   Benchmark::Featureset::SetOps::Config:
     file: lib/Benchmark/Featureset/SetOps/Config.pm
-    version: 1.02
+    version: '1.03'
 requires:
-  App::moduleswhere: 0.03
-  Config: 0
-  Config::Tiny: 2.13
-  Date::Simple: 3.03
-  File::Copy: 2.21
-  File::HomeDir: 0.99
-  Hash::FieldHash: 0.12
-  Module::Version: 0.12
-  Path::Class: 0.24
-  Perl6::Slurp: 0.05
-  Text::Xslate: 1.501
-  strict: 1.04
-  warnings: 1.12
+  App::moduleswhere: '0.03'
+  Config: '0'
+  Config::Tiny: '2.13'
+  Date::Simple: '3.03'
+  File::Copy: '2.21'
+  File::HomeDir: '0.99'
+  Hash::FieldHash: '0.12'
+  Module::Version: '0.12'
+  Path::Class: '0.24'
+  Perl6::Slurp: '0.05'
+  Text::Xslate: '1.501'
+  strict: '1.04'
+  warnings: '1.12'
 resources:
-  license: http://www.perlfoundation.org/artistic_license_1_0
-version: 1.02
+  license: http://www.perlfoundation.org/artistic_license_2_0
+version: '1.03'
