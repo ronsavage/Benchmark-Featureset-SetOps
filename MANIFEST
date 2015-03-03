@@ -22,5 +22,5 @@ README
 scripts/copy.config.pl
 scripts/setops.report.pl
 scripts/symmetric.demo.pl
-t/pod.t
 t/test.t
+xt/author/pod.t
