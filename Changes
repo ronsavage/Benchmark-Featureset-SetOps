@@ -1,5 +1,16 @@
 Revision history for Perl extension Benchmark::Featureset::SetOps.
 
+1.04  Mon Nov 16 09:56:00 2015
+	- Remove EO::Array from config/module.list.ini because it won't install. This means it is no
+		longer included in any reports.
+	- Add Set::Equivalence in module.list.ini, but don't try to test its features.
+	- Convert from Hash::FieldHash to Moo.
+	- Convert from Perl6::Slurp to File::Slurper.
+	- Convert from Test::More to Test::Stream. Test::More is still used for pod tests.
+	- Re-create html/setops.report.html.
+	- Remove Build.PL.
+	- Update pre-reqs in Makefile.PL.
+
 1.03  Wed Feb 18 16:32:00 2015
 	- Rename CHANGES to Changes.
 	- Removed unused dir share/.

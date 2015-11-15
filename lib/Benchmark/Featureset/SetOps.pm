@@ -10,16 +10,42 @@ use Config::Tiny;
 
 use Date::Simple;
 
-use Hash::FieldHash ':all';
+use File::Slurper 'read_text';
 
-use Perl6::Slurp; # For slurp().
+use Moo;
 
 use Text::Xslate 'mark_raw';
 
-fieldhash my %html_config   => 'html_config';
-fieldhash my %module_config => 'module_config';
+use Types::Standard qw/HashRef/;
 
-our $VERSION = '1.03';
+has html_config =>
+(
+	default  => sub{return {} },
+	is       => 'rw',
+	isa      => HashRef,
+	required => 0,
+);
+
+has module_config =>
+(
+	default  => sub{return {} },
+	is       => 'rw',
+	isa      => HashRef,
+	required => 0,
+);
+
+our $VERSION = '1.04';
+
+# --------------------------------------------------
+
+sub BUILD
+{
+	my($self) = @_;
+
+	$self -> html_config(Benchmark::Featureset::SetOps::Config -> new -> config);
+	$self -> module_config(Config::Tiny -> read('config/module.list.ini') );
+
+} # End of BUILD.
 
 # ------------------------------------------------
 
@@ -215,16 +241,15 @@ sub _build_templater
 
 # --------------------------------------------------
 
-sub _init
+sub log
 {
-	my($self, $arg)      = @_;
-	$$arg{html_config}   = Benchmark::Featureset::SetOps::Config -> new -> config;
-	$$arg{module_config} = Config::Tiny -> read('config/module.list.ini');
-	$self                = from_hash($self, $arg);
+	my($self, $level, $s) = @_;
+	$level ||= 'debug';
+	$s     ||= '';
 
-	return $self;
+	print "$level: $s\n";
 
-} # End of _init.
+} # End of log.
 
 # --------------------------------------------------
 
@@ -316,30 +341,6 @@ sub _process_overload_3
 	return [@name];
 
 } # End of _process_overload_3.
-
-# --------------------------------------------------
-
-sub log
-{
-	my($self, $level, $s) = @_;
-	$level ||= 'debug';
-	$s     ||= '';
-
-	print "$level: $s\n";
-
-} # End of log.
-
-# --------------------------------------------------
-
-sub new
-{
-	my($class, %arg) = @_;
-	my($self)        = bless {}, $class;
-	$self            = $self -> _init(\%arg);
-
-	return $self;
-
-}	# End of new.
 
 # ------------------------------------------------
 
