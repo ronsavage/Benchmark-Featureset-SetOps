@@ -583,6 +583,10 @@ search.
 Also, I have 7 modules on CPAN which use L<Set::Array>, so I wanted a good idea of the array/set modules before
 I decided to switch.
 
+=head1 Repository
+
+L<https://github.com/ronsavage/Benchmark-Featureset-SetOps>
+
 =head1 See Also
 
 The modules compared in this package often have links to various modules, which I won't repeat here...

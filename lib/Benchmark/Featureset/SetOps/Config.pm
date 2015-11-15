@@ -134,6 +134,10 @@ from the config/ directory in the disto into an OS-dependent directory.
 
 The run-time code uses this module to look in the same directory as used by scripts/copy.config.pl.
 
+=head1 Repository
+
+L<https://github.com/ronsavage/Benchmark-Featureset-SetOps>
+
 =head1 Support
 
 Email the author, or log a bug on RT:

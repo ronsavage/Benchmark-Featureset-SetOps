@@ -5,7 +5,7 @@ use ExtUtils::MakeMaker;
 # See lib/ExtUtils/MakeMaker.pm for details of how to influence
 # the contents of the Makefile that is written.
 
-WriteMakefile
+my(%params) =
 (
 	($] ge '5.005') ?
 	(
@@ -49,3 +49,33 @@ WriteMakefile
 	},
 	VERSION_FROM => 'lib/Benchmark/Featureset/SetOps.pm',
 );
+
+
+if ( ($ExtUtils::MakeMaker::VERSION =~ /^\d\.\d\d$/) && ($ExtUtils::MakeMaker::VERSION > 6.30) )
+{
+	$params{LICENSE} = 'artistic_2';
+}
+
+if ($ExtUtils::MakeMaker::VERSION ge '6.46')
+{
+	$params{META_MERGE} =
+	{
+		'meta-spec' =>
+		{
+			'version' => 2,
+		},
+		resources   =>
+		{
+			'bugtracker' => 'https://rt.cpan.org/Public/Dist/Display.html?Name=Benchmark-Featureset-SetOps',
+			'license'    => 'http://opensource.org/licenses/Artistic-2.0',
+			repository   =>
+			{
+				'type' => 'git',
+				'url'  => 'https://github.com/ronsavage/Benchmark-Featureset-SetOps.git',
+				'web'  => 'https://github.com/ronsavage/Benchmark-Featureset-SetOps',
+			},
+		},
+	};
+}
+
+WriteMakefile(%params);

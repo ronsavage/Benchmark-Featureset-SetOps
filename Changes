@@ -11,6 +11,7 @@ Revision history for Perl extension Benchmark::Featureset::SetOps.
 	- Update pre-reqs in Makefile.PL.
 	- Chop benchmarks copied from docs for Set::Tiny.
 	- Re-create html/setops.report.html.
+	- Add repo https://github.com/ronsavage/Benchmark-Featureset-SetOps to docs and Makefie.PL.
 
 1.03  Wed Feb 18 16:32:00 2015
 	- Rename CHANGES to Changes.
