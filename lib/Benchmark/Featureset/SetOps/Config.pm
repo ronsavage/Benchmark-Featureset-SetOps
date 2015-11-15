@@ -43,8 +43,8 @@ our $VERSION = '1.04';
 
 sub BUILD
 {
-	my($class) = @_;
-	my($path)  = Path::Class::file(File::HomeDir -> my_dist_config('Benchmark-Featureset-SetOps'), '.htbenchmark.featureset.setops.conf');
+	my($self) = @_;
+	my($path) = Path::Class::file(File::HomeDir -> my_dist_config('Benchmark-Featureset-SetOps'), '.htbenchmark.featureset.setops.conf');
 
 	$self -> read($path);
 
