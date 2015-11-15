@@ -10,13 +10,13 @@ use Config::Tiny;
 
 use Date::Simple;
 
-use File::Slurper 'read_text';
+use File::Slurper 'read_lines';
 
 use Moo;
 
 use Text::Xslate 'mark_raw';
 
-use Types::Standard qw/HashRef/;
+use Types::Standard qw/Any HashRef/;
 
 has html_config =>
 (
@@ -28,9 +28,9 @@ has html_config =>
 
 has module_config =>
 (
-	default  => sub{return {} },
+	default  => sub{return ''},
 	is       => 'rw',
-	isa      => HashRef,
+	isa      => Any,
 	required => 0,
 );
 
@@ -378,7 +378,7 @@ sub _scan_source
 
 	chomp $path; # :-(.
 
-	my(@line) = slurp($path, {chomp => 1});
+	my(@line) = read_lines($path);
 
 	# 1: Process sub-classes.
 
@@ -390,7 +390,7 @@ sub _scan_source
 
 			chomp $path; # :-(.
 
-			push @line, slurp($path, {chomp => 1});
+			push @line, read_lines($path);
 		}
 	}
 

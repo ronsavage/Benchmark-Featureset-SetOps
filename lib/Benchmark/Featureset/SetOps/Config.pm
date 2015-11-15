@@ -11,13 +11,13 @@ use Moo;
 
 use Path::Class;
 
-use Types::Standard qw/Any HashRef/;
+use Types::Standard qw/Any Str/;
 
 has config =>
 (
 	default  => sub{return {} },
 	is       => 'rw',
-	isa      => HashRef,
+	isa      => Any,
 	required => 0,
 );
 
@@ -31,9 +31,9 @@ has config_file_path =>
 
 has section =>
 (
-	default  => sub{return {} },
+	default  => sub{return ''},
 	is       => 'rw',
-	isa      => HashRef,
+	isa      => Str,
 	required => 0,
 );
 
