@@ -7,9 +7,10 @@ Revision history for Perl extension Benchmark::Featureset::SetOps.
 	- Convert from Hash::FieldHash to Moo.
 	- Convert from Perl6::Slurp to File::Slurper.
 	- Convert from Test::More to Test::Stream. Test::More is still used for pod tests.
-	- Re-create html/setops.report.html.
 	- Remove Build.PL.
 	- Update pre-reqs in Makefile.PL.
+	- Chop benchmarks copied from docs for Set::Tiny.
+	- Re-create html/setops.report.html.
 
 1.03  Wed Feb 18 16:32:00 2015
 	- Rename CHANGES to Changes.
