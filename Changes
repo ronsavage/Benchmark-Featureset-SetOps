@@ -1,5 +1,8 @@
 Revision history for Perl extension Benchmark::Featureset::SetOps.
 
+1.06  2017-04-17T18:08:00
+	- Fix typo in Makefile.PL where I specified File::Slurper V 0.0098 but meant V 0.009.
+
 1.05  2016-09-14T17:34:00
 	- Stop using Test::Stream. Use Test::More shipped in the Test::Simple distro.
 		See RT#116938. Thanx to Chad Granum aka EXODIST.
